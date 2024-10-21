@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import AllRoutes from "./routes/AllRoutes";
+import "./container/pagas/pages.css";
+import "./components/defaultLayout/defaultlayout.css";
+import "react-toastify/dist/ReactToastify.css";
+import Index from "./components/Index";
+import './container/pagas/layout/layout.css'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AllRoutes />
+      <Index.ToastContainer />
     </div>
   );
 }
